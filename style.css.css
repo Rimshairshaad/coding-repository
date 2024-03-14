@@ -33,6 +33,7 @@
 header{
     background-color: #FFF;
     margin: 10px 20px 10px 20px;
+   
 }
 .navbar{
     display: flex;
@@ -44,9 +45,12 @@ header{
   background-color: #161314;
   color: white;
 }
+
+
+
 .hero {
     background-color:pink;
-    /* padding: 100px 0; */
+   
     
   
   }
@@ -67,7 +71,7 @@ header{
   .hero .btn {
     font-size: 18px;
   }
-  .rectangle {
+  .rectangle1 {
     padding: 10px;
     margin-bottom: 20px;
 }
@@ -97,7 +101,6 @@ header{
     object-fit: cover;
 }
 .pics {
-  display: inline-block;
   width: 100%;
 }
 
@@ -131,8 +134,8 @@ header{
 .img-container {
   padding: 10px;
   overflow: hidden;
-  height: 400px;
   width: 200px;
+  display: flex;
   
 }
 .img-container img {
@@ -141,18 +144,12 @@ header{
   overflow: hidden;
 
 }
-.start-image{
-  height: 400px;
-  
-}
+
 .center-image{
-  height: 400px;
+  height: 100px;
 
 }
-.end-image{
-  height: 400px;
 
-}
 .footer {
   background-color: #EBE7E4;
   color:black;
@@ -169,6 +166,110 @@ header{
   margin-top: 20px;
 }
 
+.navbar-toggler{
+  height: 40px;
+  width: 70px;
+  background-color:transparent;
+ display: none;
+ color: black;
+
+}
+@media (max-width:990px) {
+  .navbar-toggler {
+    display: block;
+    border: block;
+  }
+}
+@media (max-width: 990px) {
+  .nav {
+    display: none;
+}
+
+.navbar-toggler {
+    display: block; 
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+    .nav-toggle-mb{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    }
+
+.hero{
+  text-align: center;
+}
+
+
+.hero .btn {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.rectangle1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rectangle1 .col-lg-6 {
+  width: 50%;
+}
+
+.rectangle1 .col-lg-6.text-right {
+  text-align: right;
+}
+.pics1-container .pics {
+  flex: 0 0 100%; 
+  max-width: 100%; 
+  text-align: center; 
+  margin-bottom: 20px; 
+}
+.card{
+  width: 250px; 
+  margin: 0 auto; 
+  margin-bottom: 20px; 
+}
+
+.img-container{
+  text-align: center;
+}
+.gallery{
+  width: 250px; 
+  margin: 0 auto; 
+  margin-bottom: 10px; 
+  flex-direction: column;
+  text-align: center;
+  height: auto;
+}
+
+.footer .container {
+  text-align: center;
+}
+
+.footer .row {
+  flex-direction: column; 
+  
+}
+
+.footer .col-lg-3 {
+  width: 100%; 
+  margin-bottom: 20px; 
+}
+
+.footer .col-lg-3 h4 {
+  margin-bottom: 2px;
+}
+.copyright{
+  padding: 5px;
+  margin-top: 2px;
+}
+}
 
 
 
